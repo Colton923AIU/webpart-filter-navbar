@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "filter-nav-client-side-solution",
+    "id": "74e4ffb6-06b5-4660-b854-6050d1d8833a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Colton McClintoc",
+      "websiteUrl": "coltonmcclintock.com",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Filter Nav is a container to hold the Filter Icons"
+      },
+      "longDescription": {
+        "default": "The Filter Icons present in the page will be moved into this container."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "filter-nav Feature",
+        "description": "",
+        "id": "a684e91d-1659-4396-903f-517536944f31",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/filter-nav-1.0.0.0.sppkg"
+  }
+}

@@ -1,0 +1,15 @@
+.filterNavContainer {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  bottom: 90vh;
+  right: 1rem;
+  background: #0033aa50;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: "100%";
+  min-height: "100%";
+}
