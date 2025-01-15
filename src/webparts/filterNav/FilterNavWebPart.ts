@@ -15,11 +15,12 @@ export interface IFilterNavWebPartProps {
 
 export default class FilterNavWebPart extends BaseClientSideWebPart<IFilterNavWebPartProps> {
   public render(): void {
-    if (!this.properties.filterNames) return;
+    const filterNames = this.properties.filterNames?.split(",") || [];
+
     const element: React.ReactElement<IFilterNavProps> = React.createElement(
       FilterNav,
       {
-        filterNames: this.properties.filterNames.split(","),
+        filterNames: filterNames,
       }
     );
 
@@ -27,6 +28,9 @@ export default class FilterNavWebPart extends BaseClientSideWebPart<IFilterNavWe
   }
 
   protected onInit(): Promise<void> {
+    if (!this.properties.filterNames) {
+      this.properties.filterNames = "";
+    }
     return super.onInit();
   }
 
@@ -58,5 +62,9 @@ export default class FilterNavWebPart extends BaseClientSideWebPart<IFilterNavWe
         },
       ],
     };
+  }
+
+  protected get disableReactivePropertyChanges(): boolean {
+    return true;
   }
 }

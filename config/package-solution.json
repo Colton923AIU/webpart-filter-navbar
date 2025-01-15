@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "filter-nav-client-side-solution",
+    "name": "Filter Icon Navbar",
     "id": "74e4ffb6-06b5-4660-b854-6050d1d8833a",
-    "version": "1.0.0.0",
+    "version": "1.0.0.3",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "Colton McClintoc",
+      "name": "Colton McClintock",
       "websiteUrl": "coltonmcclintock.com",
       "privacyUrl": "",
       "termsOfUseUrl": "",
@@ -35,6 +35,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/filter-nav-1.0.0.0.sppkg"
+    "zippedPackage": "solution/filter-nav-1.0.0.3.sppkg"
   }
 }
