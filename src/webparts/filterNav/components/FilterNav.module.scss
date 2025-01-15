@@ -1,12 +1,16 @@
 .filterNavContainer {
   display: flex;
   position: fixed;
-  left: 10rem;
-  right: 10rem;
+  left: 0;
+  right: 0;
   background: #0033aa50;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 0;
+}
+
+.filterNavContainer > * {
+  max-width: 100px;
 }

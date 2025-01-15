@@ -41,7 +41,7 @@ const loadNavbar: (filterNames: string[], parent: HTMLElement) => void = (
   });
 };
 
-const FilterNav: React.FC<IFilterNavProps> = ({ filterNames }) => {
+const FilterNav: React.FC<IFilterNavProps> = ({ filterNames, cssProps }) => {
   const [navBarLoaded, setNavBarLoaded] = React.useState(false);
 
   React.useEffect(() => {
@@ -68,7 +68,11 @@ const FilterNav: React.FC<IFilterNavProps> = ({ filterNames }) => {
   }, [navBarLoaded, filterNames]);
 
   return (
-    <div className={styles.filterNavContainer} id="filter-nav-container" />
+    <div
+      style={{ ...(cssProps as Partial<React.CSSProperties>) }}
+      className={styles.filterNavContainer}
+      id="filter-nav-container"
+    />
   );
 };
 
